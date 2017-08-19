@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "2.0.0-dev",
+  "description": "Frontend",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --hot --inline",
+    "buildProduction": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "style-loader": "^0.18.2"
+  },
+  "dependencies": {
+    "bloodhound-js": "^1.2.2",
+    "bootstrap": "^3.3.7",
+    "history": "^4.6.3",
+    "jquery": "^3.2.1",
+    "knockout": "^3.4.2"
+  }
+}
