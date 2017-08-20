@@ -1,6 +1,3 @@
-import ko from 'knockout';
-import $ from 'jquery';
-
 (function (window) {
 
     var pagerJsModule = function ($, ko) {
@@ -1597,6 +1594,8 @@ import $ from 'jquery';
         define('pager', ['knockout', 'jquery'], function (ko, $) {
             return pagerJsModule($, ko);
         });
+    } else if (typeof module === 'object' && module.exports) {
+        module.exports = pagerJsModule(require('jquery'), require('knockout'));
     } else {
         // without AMD
         window.pager = pagerJsModule($, ko);
